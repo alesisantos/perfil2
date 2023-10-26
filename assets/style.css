@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;500;600;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,1) 28%, rgba(9,9,121,1) 69%, rgba(0,212,255,1) 100%);
+    font-family: 'Inconsolata', monospace!important;
+    font-family: 'Inter', sans-serif!important;
+}
+.main-in{
+    background: rgb(208,208,208);
+    background: linear-gradient(45deg, rgba(208,208,208,1) 30%, rgba(231,231,231,1) 70%, rgba(255,255,255,1) 99%);
+    animation: changeOp 2s linear 0s 1 normal forwards;
+}
+
+hr{
+    height: 1px;
+}
+
+.a-image .frame{
+    display: inline-block;
+    max-width: 100%;
+}
+.a-image .frame .img{
+    max-width: 100%;
+    vertical-align: top;
+}
+span img{
+    width: 10em;
+}
+p{
+    font-size: 1.25rem;
+}
+.icons{
+    padding: 1.25em;
+}
+ul{
+    padding: 0!important;
+    margin-bottom: 0;
+}
+li a{
+    list-style: none;
+    height: 3em!important;
+    width: 3em!important;
+    background-color: rgba(75, 75, 83, 0.356)!important;
+}
+
+.icons>#li-1{
+    opacity: 0;
+    animation: changeIc 1s linear 2s 1 normal forwards;
+}
+.icons>#li-2{
+    opacity: 0;
+    animation: changeIc 1s linear 3s 1 normal forwards;
+}
+.icons>#li-3{
+    opacity: 0;
+    animation: changeIc 1s linear 4s 1 normal forwards;
+}
+.icons>#li-4{
+    opacity: 0;
+    animation: changeIc 1s linear 5s 1 normal forwards;
+}
+.icons>#li-5{
+    opacity: 0;
+    animation: changeIc 1s linear 6s 1 normal forwards;
+}
+
+a{
+    text-decoration: none;
+}
+
+li:hover{
+    opacity: 100%!important;
+    
+}
+
+
+@media screen and (width >= 1024px) {
+    .main-in{
+        width: 47rem!important;
+    }
+}
+
+@media screen and (width <= 575px){
+    li a{
+        height: 2em!important;
+        width: 2em!important;
+    }
+    span img{
+        width: 8em;
+    }
+    p{
+        font-size: 1rem;
+    }
+    a>svg{
+        width: 50%!important;
+        height: 50%!important;
+    }
+}
+
+@media screen and (width <= 320px){
+    .icons{
+        gap: .5rem!important;
+        margin-top: 0!important;
+    }
+    .main .main-in{
+        height: 100vh!important;
+    }
+    .main-in{
+        padding: 0!important;
+    }
+    .name{
+        margin-bottom: 0!important;
+    }
+    .divider{
+        margin-top: 10px!important;
+        margin-bottom: 10px!important;
+    }
+    li a{
+        width: 50%!important;
+        border-radius: 0!important;
+        width: 2rem!important;
+        height: 2rem!important;
+    }
+    a>svg{
+        width: 50%!important;
+        height: 50%!important;
+    }
+    .frame>img{
+        margin: 10px 0!important;
+    }
+}
+
+@keyframes changeOp{
+    0% {opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@keyframes changeIc{
+    0% {opacity: 0;}
+    25% {opacity: 0.15;}
+    50% {opacity: 0.35;}
+    100% {opacity: 0.5;}
+}
